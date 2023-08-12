@@ -209,6 +209,7 @@
     font-weight: 400;
     padding: 2rem;
     line-height: 1.6;
+    text-align: justify;
   }
   
   
@@ -402,6 +403,7 @@
   .step-description {
     font-size: 1.8rem;
     line-height: 1.8;
+    text-align: justify;
   }
   
   .step-img-box {
