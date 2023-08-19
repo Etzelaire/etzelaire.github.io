@@ -99,22 +99,24 @@
       align-items: center; 
     }
     
-    .btn-mobile-nav, .icon-mobile-nav {
+    .btn-mobile-nav,  .icon-mobile-nav{
         display: block;
     }
 
     .submenu{
-      margin-top: 20rem;
       display: none; /* Initially hide submenu */
       position: absolute; /* Positioning it relative to its parent, which is .dropdown */
       top: 100%; /* Position right below the menu item */
-      left: 30%; /* Align it to the left side of the parent menu item */
-     
+      left: 50%; /* Align it to the left side of the parent menu item */
+      transform: translate(-50%);
+      font-size: 2rem;
       z-index: 1000; /* Ensure it appears on top */
+      /* padding: 0 10%; */
     }
 
     .dropdown {
-      position: relative; /* This makes sure the submenu is positioned relative to this container */
+      position: relative; 
+      /* This makes sure the submenu is positioned relative to this container */
   }
 
 
@@ -138,9 +140,9 @@
   }
 }
 
+/* Add media queries for mobile responsiveness if needed */
 
-
-
+/******************************************************/
 
 
 
