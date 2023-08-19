@@ -105,7 +105,18 @@
 
     .submenu{
       margin-top: 20rem;
+      display: none; /* Initially hide submenu */
+      position: absolute; /* Positioning it relative to its parent, which is .dropdown */
+      top: 100%; /* Position right below the menu item */
+      left: 30%; /* Align it to the left side of the parent menu item */
+     
+      z-index: 1000; /* Ensure it appears on top */
     }
+
+    .dropdown {
+      position: relative; /* This makes sure the submenu is positioned relative to this container */
+  }
+
 
     .main-nav-list {
       list-style: none;
