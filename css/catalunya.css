@@ -65,4 +65,31 @@
   #feature2:nth-child(2) {
     order: -1;
   }
+
+/* Mobile First CSS */
+.omanwrap {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.features__img {
+    max-width: 100%; /* Make image responsive */
+    display: block;
+    margin-bottom: 1rem; /* Spacing between image and text content */
+}
+
+.features__feature {
+    text-align: center; /* Center the text content */
+    padding: 1rem; /* Padding around the text content */
+}
+
+
+
+
+
+
+
+
 }

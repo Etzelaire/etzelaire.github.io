@@ -21,6 +21,7 @@
     margin: 0;
     display: flex;
     gap: 20px; /* Space between menu items */
+    cursor: pointer;
 }
 
 .main-nav-link, .submenu a {
@@ -131,7 +132,11 @@
       padding: 1rem;
       text-decoration: none;
       color: white; /* Adjust to your preference */
-      font-size: 1.5rem; /* Making font bigger for mobile readability */
+      font-size: 3.2rem; /* Making font bigger for mobile readability */
+  }
+
+  .main-nav-link:hover{
+    cursor: pointer;
   }
 
   /* This is for when the menu is active (you'll toggle this class using JavaScript) */
