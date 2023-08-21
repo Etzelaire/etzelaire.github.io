@@ -492,14 +492,14 @@
     /* 60% of parent's width */
     padding-bottom: 60%;
   
-    background-color: #fdf2e9;
+    background-color: #f8f7f4;
     z-index: -2;
   }
   
   .step-img-box::after {
     width: 45%;
     padding-bottom: 45%;
-    background-color: #fae5d3;
+    background-color: #eeeeed;
     z-index: -1;
   }
   
