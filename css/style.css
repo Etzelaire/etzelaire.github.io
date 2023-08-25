@@ -60,9 +60,9 @@
     display: block;
 }
 
-.dropdown:hover .submenu {
+/* .dropdown:hover .submenu {
     display: block;
-}
+} */
 
 /* Mobile button styling */
 .btn-mobile-nav {
@@ -138,7 +138,7 @@
       display: none; /* Initially hide submenu */
       position: absolute; /* Positioning it relative to its parent, which is .dropdown */
       top: 100%; /* Position right below the menu item */
-      left: 50%; /* Align it to the left side of the parent menu item */
+      left: 50%; /* Align to the left side of the parent menu item */
       width: 100%;
       transform: translate(-50%);
       font-size: 2rem;

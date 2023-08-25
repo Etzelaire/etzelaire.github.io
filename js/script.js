@@ -236,8 +236,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 /********************************************************/
-
-
  // Select all dropdown menu links
 const dropdownLinks = document.querySelectorAll('.dropdown .main-nav-link');
 
