@@ -17,7 +17,7 @@ console.log("A page produced and edited by Etzelaire");
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 console.log(currentYear);
-console.log("Copyright protected site?");
+console.log("Copyright protected site.");
 yearEl.textContent = currentYear;
 ///////////////////////////////////////////////////////////
 // Make mobile navigation work
@@ -185,37 +185,37 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-document.addEventListener('DOMContentLoaded', (event) => {
-  // Get the hamburger button, close button and the nav menu
-  // var hamburger = document.querySelector(".icon-mobile-nav[name='menu-outline']");
-  // var close = document.querySelector(".icon-mobile-nav[name='close-outline']");
-  var nav = document.querySelector(".main-nav");
+// document.addEventListener('DOMContentLoaded', (event) => {
+//   // Get the hamburger button, close button and the nav menu
+//   // var hamburger = document.querySelector(".icon-mobile-nav[name='menu-outline']");
+//   // var close = document.querySelector(".icon-mobile-nav[name='close-outline']");
+//   var nav = document.querySelector(".main-nav");
 
-  // Attach click event to the hamburger button
-  hamburger.addEventListener("click", function() {
-      hamburger.style.display = "none";
-      // close.style.display = "block";
-      nav.style.display = "block";
-  });
+//   // Attach click event to the hamburger button
+//   // hamburger.addEventListener("click", function() {
+//   //     hamburger.style.display = "none";
+//   //     // close.style.display = "block";
+//   //     nav.style.display = "block";
+//   // });
 
-  // Attach click event to the close button
-  close.addEventListener("click", function() {
-      // close.style.display = "none";
-      hamburger.style.display = "block";
-      nav.style.display = "none";
-  });
+//   // Attach click event to the close button
+//   close.addEventListener("click", function() {
+//       // close.style.display = "none";
+//       hamburger.style.display = "block";
+//       nav.style.display = "none";
+//   });
 
-  // Listen for resize events
-  window.addEventListener('resize', function() {
-      // If the screen size is 768px or larger
-      if (window.innerWidth >= 768) {
-          // Reset everything to the default state
-          hamburger.style.display = "";
-          // close.style.display = "";
-          nav.style.display = "";
-      }
-  });
-});
+//   // Listen for resize events
+//   window.addEventListener('resize', function() {
+//       // If the screen size is 768px or larger
+//       if (window.innerWidth >= 768) {
+//           // Reset everything to the default state
+//           hamburger.style.display = "";
+//           // close.style.display = "";
+//           nav.style.display = "";
+//       }
+//   });
+// });
 
 
 //DROPDOWN MENU//
