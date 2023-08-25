@@ -205,20 +205,20 @@ document.addEventListener("DOMContentLoaded", function() {
 // checkFlexGap();
 document.addEventListener('DOMContentLoaded', (event) => {
   // Get the hamburger button, close button and the nav menu
-  var hamburger = document.querySelector(".icon-mobile-nav[name='menu-outline']");
-  var close = document.querySelector(".icon-mobile-nav[name='close-outline']");
+  // var hamburger = document.querySelector(".icon-mobile-nav[name='menu-outline']");
+  // var close = document.querySelector(".icon-mobile-nav[name='close-outline']");
   var nav = document.querySelector(".main-nav");
 
   // Attach click event to the hamburger button
   hamburger.addEventListener("click", function() {
       hamburger.style.display = "none";
-      close.style.display = "block";
+      // close.style.display = "block";
       nav.style.display = "block";
   });
 
   // Attach click event to the close button
   close.addEventListener("click", function() {
-      close.style.display = "none";
+      // close.style.display = "none";
       hamburger.style.display = "block";
       nav.style.display = "none";
   });
@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       if (window.innerWidth >= 768) {
           // Reset everything to the default state
           hamburger.style.display = "";
-          close.style.display = "";
+          // close.style.display = "";
           nav.style.display = "";
       }
   });
@@ -237,8 +237,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 //DROPDOWN MENU//
+document.addEventListener("DOMContentLoaded", function() {
+  var mobileNavButton = document.querySelector('.btn-mobile-nav');
+  var closeNavButton = document.querySelector('.close-nav-btn');
+  var mainNav = document.querySelector('.main-nav');
 
-   
+  mobileNavButton.addEventListener('click', function() {
+      // Toggle the active class
+      mainNav.classList.toggle('active');
+  });
+
+  closeNavButton.addEventListener('click', function() {
+      mainNav.classList.remove('active');
+  });
+});
 
  
 

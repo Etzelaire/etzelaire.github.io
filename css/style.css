@@ -76,13 +76,43 @@
 }
 
 .btn-mobile-nav:hover {
-    background-color: #ddd; /* Slightly darker background on hover */
+    background-color: #d5d5d5; /* Slightly darker background on hover */
 }
 
 .icon-mobile-nav {
     display: none;
     font-size: 24px;
 }
+/******  Close nav button   ******/
+/* .close-nav-btn {
+  /* background-color: transparent; */
+  /* border: none;
+  font-size: 2rem;
+  cursor: pointer;
+} */ 
+
+.close-nav-btn {
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  
+}
+
+#close{
+  background-color: #6a90d7;
+  color: #ffffff;
+}
+
+#close:hover {
+  background-color: #276df0;
+  color:#201f1f;
+}
+
+/* Display the close button when the nav is active/open */
+/* .main-nav.active .close-nav-btn {
+  display: block;
+} */
 
 /* Add media queries for mobile responsiveness if needed */
 @media screen and (max-width: 768px) { /* Example breakpoint, adjust as needed */
@@ -145,7 +175,7 @@
   }
 }
 
-/* Add media queries for mobile responsiveness if needed */
+
 
 /******************************************************/
 
