@@ -238,5 +238,20 @@ document.addEventListener("DOMContentLoaded", function() {
 /********************************************************/
 
 
- 
+ // Select all dropdown menu links
+const dropdownLinks = document.querySelectorAll('.dropdown .main-nav-link');
+
+// Add click event listeners to each dropdown link
+dropdownLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        // Toggle display for the submenu of the clicked dropdown link
+        const submenu = this.nextElementSibling;
+        if (submenu.style.display === 'block') {
+            submenu.style.display = 'none';
+        } else {
+            submenu.style.display = 'block';
+        }
+    });
+});
+
 

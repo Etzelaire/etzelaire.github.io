@@ -139,7 +139,7 @@
       position: absolute; /* Positioning it relative to its parent, which is .dropdown */
       top: 100%; /* Position right below the menu item */
       left: 50%; /* Align it to the left side of the parent menu item */
-      width: 80%;
+      width: 100%;
       transform: translate(-50%);
       font-size: 2rem;
       z-index: 1000; /* Ensure it appears on top */
