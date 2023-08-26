@@ -253,3 +253,7 @@ dropdownLinks.forEach(link => {
 });
 
 
+/********************************************************/
+ // Close previosuly open menus on clicking a new one
+
+
