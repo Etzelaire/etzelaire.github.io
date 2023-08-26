@@ -237,23 +237,55 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /********************************************************/
  // Select all dropdown menu links
-const dropdownLinks = document.querySelectorAll('.dropdown .main-nav-link');
+// const dropdownLinks = document.querySelectorAll('.dropdown .main-nav-link');
 
-// Add click event listeners to each dropdown link
-dropdownLinks.forEach(link => {
-    link.addEventListener('click', function() {
-        // Toggle display for the submenu of the clicked dropdown link
-        const submenu = this.nextElementSibling;
-        if (submenu.style.display === 'block') {
-            submenu.style.display = 'none';
-        } else {
-            submenu.style.display = 'block';
-        }
-    });
-});
+// // Add click event listeners to each dropdown link
+// dropdownLinks.forEach(link => {
+//     link.addEventListener('click', function() {
+//         // Toggle display for the submenu of the clicked dropdown link
+//         const submenu = this.nextElementSibling;
+//         if (submenu.style.display === 'block') {
+//             submenu.style.display = 'none';
+//         } else {
+//             submenu.style.display = 'block';
+//         }
+//     });
+// });
 
 
 /********************************************************/
  // Close previosuly open menus on clicking a new one
+ document.addEventListener("DOMContentLoaded", function() {
+
+  // Get all dropdown parent items
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+  // Iterate through each dropdown parent
+  dropdowns.forEach(dropdown => {
+
+      // Add click event to each dropdown parent
+      dropdown.addEventListener('click', function() {
+
+          // Find the submenu within the clicked dropdown
+          const submenu = this.querySelector('.submenu');
+
+          // If this submenu is already open, close it
+          if (submenu.classList.contains('open')) {
+              submenu.classList.remove('open');
+              return;
+          }
+
+          // If another submenu is open, close it
+          const openSubmenu = document.querySelector('.submenu.open');
+          if (openSubmenu) {
+              openSubmenu.classList.remove('open');
+          }
+
+          // Open the clicked submenu
+          submenu.classList.add('open');
+      });
+  });
+
+});
 
 
