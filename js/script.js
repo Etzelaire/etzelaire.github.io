@@ -257,35 +257,40 @@ document.addEventListener("DOMContentLoaded", function() {
  // Close previosuly open menus on clicking a new one
  document.addEventListener("DOMContentLoaded", function() {
 
-  // Get all dropdown parent items
-  const dropdowns = document.querySelectorAll('.dropdown');
+  // Check if the screen width is <= 768px (typically considered as mobile width)
+  if (window.innerWidth <= 768) {
 
-  // Iterate through each dropdown parent
-  dropdowns.forEach(dropdown => {
+      // Get all dropdown parent items
+      const dropdowns = document.querySelectorAll('.dropdown');
 
-      // Add click event to each dropdown parent
-      dropdown.addEventListener('click', function() {
+      // Iterate through each dropdown parent
+      dropdowns.forEach(dropdown => {
 
-          // Find the submenu within the clicked dropdown
-          const submenu = this.querySelector('.submenu');
+          // Add click event to each dropdown parent
+          dropdown.addEventListener('click', function() {
 
-          // If this submenu is already open, close it
-          if (submenu.classList.contains('open')) {
-              submenu.classList.remove('open');
-              return;
-          }
+              // Find the submenu within the clicked dropdown
+              const submenu = this.querySelector('.submenu');
 
-          // If another submenu is open, close it
-          const openSubmenu = document.querySelector('.submenu.open');
-          if (openSubmenu) {
-              openSubmenu.classList.remove('open');
-          }
+              // If this submenu is already open, close it
+              if (submenu.classList.contains('open')) {
+                  submenu.classList.remove('open');
+                  return;
+              }
 
-          // Open the clicked submenu
-          submenu.classList.add('open');
+              // If another submenu is open, close it
+              const openSubmenu = document.querySelector('.submenu.open');
+              if (openSubmenu) {
+                  openSubmenu.classList.remove('open');
+              }
+
+              // Open the clicked submenu
+              submenu.classList.add('open');
+          });
       });
-  });
+  }
 
 });
+
 
 
