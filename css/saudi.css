@@ -49,7 +49,25 @@
     gap: 5rem;
 }
 
+.saudi_ul li{
+    margin: 1rem;
+    
+}
 
+.saudi_ul dl{
+    text-align: justify;
+}
+
+.saudi_ul {
+    margin: 2rem;
+}
+
+.saudi_intro{
+    text-align: justify;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    margin-top: -3rem;
+}
 
 /**************************/
 /* BELOW 544px (Phones) */
@@ -57,12 +75,15 @@
 
 @media (max-width: 34em) {
 
-.features {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #feature2:nth-child(2) {
-    order: -1;
-  }
+    .features {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .features__img {
+        order: -1; /** this ensures the image always comes first in the flexbox order **/
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1em;
+    }
 }
