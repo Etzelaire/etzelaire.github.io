@@ -117,3 +117,23 @@
     margin-top: 0;
     z-index: -4;
 }
+
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+
+    
+
+    .blog-menu{
+        margin-top: -10rem;
+    }
+
+    #subscribe-section{
+        width: 90%;
+        border-radius: 6px;
+    }
+
+}
