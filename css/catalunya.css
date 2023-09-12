@@ -57,33 +57,17 @@
 
 @media (max-width: 34em) {
 
-.features {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #feature2:nth-child(2) {
-    order: -1;
-  }
+    .features {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-/* Mobile First CSS */
-.omanwrap {
-    display: flex;
-    flex-direction: column; /* Stack items vertically on mobile */
-    align-items: center;
-    margin: 1rem 0;
-}
-
-.features__img {
-    max-width: 100%; /* Make image responsive */
-    display: block;
-    margin-bottom: 1rem; /* Spacing between image and text content */
-}
-
-.features__feature {
-    text-align: center; /* Center the text content */
-    padding: 1rem; /* Padding around the text content */
-}
+    .features__img {
+        order: -1; /** this ensures the image always comes first in the flexbox order **/
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1em;
+    }
 
 
 
