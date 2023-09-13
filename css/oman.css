@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 0;
-    
+    height: 100vh;
 }
 
 .oman-intro p{
@@ -68,4 +68,5 @@
         margin: 0;
         margin-bottom: 1em;
     }
-}
+
+  
