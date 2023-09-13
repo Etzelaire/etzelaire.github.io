@@ -130,9 +130,7 @@
 .features p{
   font-size: 1.6rem;
   font-weight: 200;
-  padding: 0;
-  margin: 0;
- 
+  margin-bottom: 2rem;
 }
 
  .container{
@@ -146,6 +144,11 @@
   padding: 0;
   margin: 0;
 } */
+
+.hero-intro{
+  text-align: justify;
+  font-weight: 200;
+}
 
 /******     PARAGRAPH   ******/
   /* MOBILE NAVIGATION */

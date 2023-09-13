@@ -21,11 +21,12 @@
 
 
 #oman-hero{
-    background-color: rgba(183, 212, 235, 0.6); 
+    background-color: rgba(183, 212, 235, 0.7); 
     box-shadow: 2px 6px 12px 0px rgba(0,0,0,0.8);
     font-size: 1.8rem;
     padding: 1rem 2rem;
     margin-top: 3rem;   
+    border-radius: 8px;
 }
 
 #oman-hero p{
