@@ -126,7 +126,28 @@
   width: 100px !important;
 }
 
+/******     PARAGRAPH   ******/
+.features p{
+  font-size: 1.6rem;
+  font-weight: 200;
+  padding: 0;
+  margin: 0;
+ 
+}
 
+ .container{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+} 
+
+/* .features{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+} */
+
+/******     PARAGRAPH   ******/
   /* MOBILE NAVIGATION */
   .header {
     padding: 0;
@@ -339,10 +360,6 @@
 
 
 
-  /* .logos img { */
-  /* height: 4.rem;
-  } */
-
   .step-img-box:nth-child(2) {
     grid-row: 1;
   }
@@ -364,13 +381,11 @@
     gap: 1.2rem;
   }
 
-  /* 
-  - Font sizes (px)
-  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+  /** - Font sizes (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 *****/
+
   
-  - Spacing system (px)
-  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-  */
+  
+  /** - Spacing system (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 **/
 
   /**************************/
   /* Fixing Safari flexbox gap */
