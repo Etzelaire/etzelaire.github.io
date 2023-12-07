@@ -361,7 +361,9 @@
     width: 80%;
   }
 
-
+  .footer {
+    padding: 3.2rem;
+  }
 
   .step-img-box:nth-child(2) {
     grid-row: 1;
