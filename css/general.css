@@ -134,18 +134,33 @@ p {
 
 .inner_ul{
   text-decoration: none;
-  background-color: rgb(238, 235, 230);
+  background-color: rgb(158, 201, 228);
   line-height: 1.5;
   text-align: justify;
-  /* border: 3px solid rgb(28, 162, 117); */
   border-radius: 10px;
-  padding: 2.4rem;
+  padding: 5.6rem;
+
+  --c: #222726; /* the border color */
+  --b: 5px;    /* the border thickness*/
+  --g: 24px;     /* the gap on hover */
+  
+  padding: calc(var(--g) + var(--b));
+  --_g: #0000 25%,var(--c) 0;
+  background: 
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+     var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+    conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+     0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+  transition: .2s, background-position .1s .1s;
+  cursor: pointer;
+
 }
+
 
 .inner_ul:hover{
   background-color: #ffffff;
-  border: 3px solid #6a7070; 
-  border-style:hidden;
+  --_i: 100%;
+  transition: .3s, background-size .3s .3s;
 }
 
 .inner_ul li{
