@@ -74,6 +74,10 @@ p {
   font-weight: 500;
 }
 
+.cursive{
+  font-style: italic;
+}
+
 /* GENERAL ELEMENTS */
 
 .section {
@@ -114,6 +118,68 @@ p {
   font-weight: 400;
   padding: 2rem;
   text-align: justify;
+}
+
+
+/*******  VISA SECTION   ****************/
+.visa_ul {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.visa_ul li{
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.inner_ul{
+  text-decoration: none;
+  background-color: rgb(238, 235, 230);
+  line-height: 1.5;
+  text-align: justify;
+  /* border: 3px solid rgb(28, 162, 117); */
+  border-radius: 10px;
+  padding: 2.4rem;
+}
+
+.inner_ul:hover{
+  background-color: #ffffff;
+  border: 3px solid #6a7070; 
+  border-style:hidden;
+}
+
+.inner_ul li{
+  list-style: none;
+  
+}
+
+.inner_ul dl{
+  font-size: 3.2rem;
+}
+
+.trait1{
+  background-color: rgb(94, 216, 223);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.trait2{
+  background-color: rgb(77, 214, 166);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.trait3{
+  background-color: rgb(203, 143, 243);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.after_ul{
+  font-size: 1.6rem;
+  margin-top: 4rem;
+  text-align: justify;
+  font-family:sans-serif;
 }
 /*/////////////////HEADER///////////////*/
 .header {

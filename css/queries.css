@@ -373,8 +373,17 @@
     grid-row: 5;
   }
 
+  .step-img-box:nth-child(10) {
+    grid-row: 9;
+  }
+
+  .heading-secondary {
+    margin-bottom: 10rem;
+  }
+
   .step-img-box {
     transform: translateY(2.4rem);
+    padding: 2rem;
   }
 
   .testimonials {
