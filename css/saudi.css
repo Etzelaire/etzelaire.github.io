@@ -69,6 +69,18 @@
     margin-top: -3rem;
 }
 
+
+.cards{
+    background-color: aquamarine;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    border: 2px solid blueviolet;
+    font-size: 1.4rem;
+    text-align: justify;
+    box-shadow: 2px 4px 16px 0px rgba(0,0,0,0.8);
+}
+
 /**************************/
 /* BELOW 544px (Phones) */
 /**************************/
