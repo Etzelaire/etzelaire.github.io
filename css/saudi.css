@@ -64,19 +64,21 @@
 
 .saudi_intro{
     text-align: justify;
-    font-size: 1rem;
+    font-size: 1.6rem;
     margin-bottom: 2rem;
     margin-top: -3rem;
 }
 
 
+
+
 .cards{
-    background-color: aquamarine;
+    background-image: linear-gradient(aqua, aquamarine);
     padding: 2rem;
     border-radius: 10px;
-    margin-bottom: 2rem;
-    border: 2px solid blueviolet;
-    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    border: none;
+    font-size: 1.6rem;
     text-align: justify;
     box-shadow: 2px 4px 16px 0px rgba(0,0,0,0.8);
 }
