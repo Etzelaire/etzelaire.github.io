@@ -19,13 +19,6 @@ const currentYear = new Date().getFullYear();
 console.log(currentYear);
 console.log("Copyright protected site.");
 yearEl.textContent = currentYear;
-///////////////////////////////////////////////////////////
-// Make mobile navigation work
-// const btnNavEl = document.querySelector(".btn-mobile-nav");
-// const headerEl = document.querySelector(".header");
-// btnNavEl.addEventListener("click", function () {
-//   headerEl.classList.toggle("nav-open");
-// });
 
 ///////////////////////////////////////////////////////////
 //BUTTON SCROLLING
