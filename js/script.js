@@ -26,6 +26,37 @@ yearEl.textContent = currentYear;
 // btnNavEl.addEventListener("click", function () {
 //   headerEl.classList.toggle("nav-open");
 // });
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdowns = document.querySelectorAll(".dropdown");
+
+  dropdowns.forEach((dropdown) => {
+    const link = dropdown.querySelector(".main-nav-link");
+    const submenu = dropdown.querySelector(".submenu");
+
+    // Toggle submenu on click
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const isOpen = submenu.style.display === "block";
+      
+      // Close all open dropdowns first
+      document.querySelectorAll(".submenu").forEach((menu) => {
+        menu.style.display = "none";
+      });
+      
+      // Toggle current submenu
+      submenu.style.display = isOpen ? "none" : "block";
+    });
+  });
+
+  // Close submenu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".dropdown")) {
+      document.querySelectorAll(".submenu").forEach((menu) => {
+        menu.style.display = "none";
+      });
+    }
+  });
+});
 
 ///////////////////////////////////////////////////////////
 //BUTTON SCROLLING
